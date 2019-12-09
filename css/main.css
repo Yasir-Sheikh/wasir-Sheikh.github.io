@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 rect {
-    color:blue;
+    color:red;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
