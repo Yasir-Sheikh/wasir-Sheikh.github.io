@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-rect {
+style {
     color:red;
 }
 nav ul, footer ul {
