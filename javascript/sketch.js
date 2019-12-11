@@ -5,9 +5,6 @@ function setup() {
   //cnv.position(x, y);
 
 }
-
-let clickX;
-let clickY;
 let pix;
 
 function windowResized() {
@@ -21,11 +18,9 @@ function draw() {
   ellipse(200,200,200);
   if (mouseIsPressed) {
     if (mouseButton === LEFT) {
-      clickX = mouseX;
-      clickY = mouseY;
       //console.log("X: " + clickX);
       //console.log("Y: " + clickY);
-      pix = get(clickX, clickY);
+      pix = get(mouseX, mouseY);
       for(let i = 0; i<3; i++){
       fill(0);
       text(pix[i], (windowWidth/2)+ i*30, windowHeight/2);
