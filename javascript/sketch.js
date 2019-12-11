@@ -1,12 +1,33 @@
 function setup() {
-  var cnv = createCanvas(300, 300);
-  var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
-  cnv.position(x, y);
-  background(255, 0, 200);
+  let cnv = createCanvas(windowWidth, windowHeight);
+  //let x = (windowWidth - width) / 2;
+  //let y = (windowHeight - height) / 2;
+  //cnv.position(x, y);
+
 }
 
+let clickX;
+let clickY;
+let pix;
+
 function draw() {
-  background(200,200,100);
-  ellipse(150,150,10);
+  background(200, 200, 100);
+  fill(255,0,0);
+  strokeWeight(10);
+  ellipse(200,200,200);
+  if (mouseIsPressed) {
+    if (mouseButton === LEFT) {
+      clickX = mouseX;
+      clickY = mouseY;
+      //console.log("X: " + clickX);
+      //console.log("Y: " + clickY);
+      pix = get(clickX, clickY);
+      for(let i = 0; i<3; i++){
+      fill(0);
+      text(pix[i], mouseX+ i*30, mouseY);
+      }
+
+
+    }
+  }
 }
