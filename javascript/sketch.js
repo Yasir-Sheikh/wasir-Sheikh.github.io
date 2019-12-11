@@ -24,7 +24,7 @@ function draw() {
       pix = get(clickX, clickY);
       for(let i = 0; i<3; i++){
       fill(0);
-      text(pix[i], mouseX+ i*30, mouseY);
+      text(pix[i], (windowWidth/2)+ i*30, windowHeight/2);
       }
 
 
