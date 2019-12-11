@@ -10,6 +10,10 @@ let clickX;
 let clickY;
 let pix;
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function draw() {
   background(200, 200, 100);
   fill(255,0,0);
