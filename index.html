@@ -13,10 +13,16 @@
   </head>
 	<body>
 		<canvas id="Click" width="1000" height="1000" style="border:10px solid black;"></canvas>
-  
-  
+
 	 <script>
-	
+	var c = document.getElementById("Click");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(500,500,20,20);
+	ctx.fillStyle="blue";
+	ctx.fill();
+		 
+		 
     </script>
 	<!--  <svg width="600", height="600">
       <rect x="500"  y="500" width="100" height="100" 
