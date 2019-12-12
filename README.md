@@ -1,2 +1,3 @@
 # RGBmix
 App to mix two colors on screen
+# MOVE COLOR FOLDER IN JAVASCRIPT FOLDER TEST IS IMG LOAD WORKS
