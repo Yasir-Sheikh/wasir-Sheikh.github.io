@@ -48,7 +48,8 @@ function mix() {
 
 for (let i = 0; i<3; i++)
 {
-  newColor[i] = (pixChoice1[i] + pixChoice2[i]) / 2
+  newColor[i] = (pixChoice1[i] + pixChoice2[i]) / 2;
+  newColor[i] = floor(newColor[i]);
 }
 
 }
