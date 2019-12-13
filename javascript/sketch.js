@@ -1,6 +1,8 @@
+let grad;
+
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
-  //grad = loadImage("img/larsV.jpg");
+  grad = loadImage("Colour-Wheel-Rainbow-Spectrum-Color-Wheel-1740381.jpg");
   //cnv.parent("a");
   //let x = (windowWidth - width) / 2;
   //let y = (windowHeight - height) / 2;
@@ -14,7 +16,6 @@ let pixChoice1 = [0, 0, 0];
 let pixChoice2 = [0, 0, 0];
 let clickNum = 0;
 let newColor = [255, 255, 255];
-let n = 1;
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
@@ -28,7 +29,7 @@ function draw() {
   fill(newColor[0], newColor[1], newColor[2]);
   rect(500, 100, 200, 200);
 
-  //image(grad, 0, 0, 300, 300);
+  image(grad, windowWidth/2, windowHeight/2, 300, 300);
 
   hPix = get(mouseX, mouseY);
   for (let i = 0; i < 3; i++) {
@@ -36,19 +37,19 @@ function draw() {
     text(hPix[i], (windowWidth / 2) + i * 30, windowHeight / 2);
     text(pixChoice1[i], 0 + i * 30, 10)
     text(pixChoice2[i], 0 + i * 30, 40)
+    text(newColor[i], 0 + i * 30, 60);
   }
-  if (clickNum === 2 * n) {
-    mix(pixChoice1, pixChoice2, newColor);
-    n++;
-  }
-  text(newColor[0] + "   " + newColor[1] + "       " + newColor[2], 0, 70);
+  if (clickNum%2 === 0 ) { mix(); }
+
 }
 
-function mix(color1, color2, color3) {
+function mix() {
 
-  color3[0] = (color1[0] + color2[0]) / 2
-  color3[1] = (color1[1] + color2[1]) / 2
-  color3[2] = (color1[2] + color2[2]) / 2
+
+for (let i = 0; i<3; i++)
+{
+  newColor[i] = (pixChoice1[i] + pixChoice2[i]) / 2
+}
 
 }
 
