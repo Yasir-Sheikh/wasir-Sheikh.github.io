@@ -1,12 +1,9 @@
 let grad;
 
 function setup() {
-  let cnv = createCanvas(1000, 800);
+  let cnv = createCanvas(windowWidth-17, 400);
   cnv.parent('can');
   grad = loadImage("/javascript/gradient.png");
-  //let x = (windowWidth - width) / 2;
-  //let y = (windowHeight - height) / 2;
-  //cnv.position(x, y);
 
 }
 
@@ -18,25 +15,26 @@ let clickNum = 0;
 let newColor = [255, 255, 255];
 
 function windowResized() {
-  resizeCanvas(1000, 800);
+  resizeCanvas(windowWidth-17, 400);
 }
 
 function draw() {
-  background(200, 200, 100);
+  background(255, 229, 180);
   fill(0, 0, 255);
   strokeWeight(10);
   fill(newColor[0], newColor[1], newColor[2]);
-  rect(500, 100, 200, 200);
+  rect(500, 50, 200, 300);
+  textSize(25);
 
-  image(grad, 100, 800/2, 800, 200);
+  image(grad, 100, 400/2, 800, 200);
 
   hPix = get(mouseX, mouseY);
   for (let i = 0; i < 3; i++) {
     fill(0);
-    text(hPix[i], (1000 / 2) + i * 30, 800 / 2);
-    text(pixChoice1[i], 0 + i * 30, 10)
-    text(pixChoice2[i], 0 + i * 30, 40)
-    text(floor(newColor[i]), 0 + i * 30, 60);
+    text(hPix[i], (windowWidth-17) + i * 50, 400);
+    text(pixChoice1[i], 0 + i * 50, 50)
+    text(pixChoice2[i], 0 + i * 50, 80)
+    text(floor(newColor[i]), 0 + i * 50, 110);
   }
   if (clickNum%2 === 0 ) { mix(); }
 
