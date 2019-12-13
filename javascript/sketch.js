@@ -2,7 +2,7 @@ let grad;
 
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
-  grad = loadImage("/javascript/larsV.jpg");
+  grad = loadImage("/javascript/gradient.png");
   //cnv.parent("a");
   //let x = (windowWidth - width) / 2;
   //let y = (windowHeight - height) / 2;
