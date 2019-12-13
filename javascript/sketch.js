@@ -37,7 +37,7 @@ function draw() {
     text(hPix[i], (1000 / 2) + i * 30, 800 / 2);
     text(pixChoice1[i], 0 + i * 30, 10)
     text(pixChoice2[i], 0 + i * 30, 40)
-    text(newColor[i], 0 + i * 30, 60);
+    text(floor(newColor[i]), 0 + i * 30, 60);
   }
   if (clickNum%2 === 0 ) { mix(); }
 
@@ -49,7 +49,6 @@ function mix() {
 for (let i = 0; i<3; i++)
 {
   newColor[i] = (pixChoice1[i] + pixChoice2[i]) / 2;
-  newColor[i] = floor(newColor[i]);
 }
 
 }
