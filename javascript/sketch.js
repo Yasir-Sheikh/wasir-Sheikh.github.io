@@ -2,7 +2,7 @@ let grad;
 
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
-  grad = loadImage("/javascript/Colour-Wheel-Rainbow-Spectrum-Color-Wheel-1740381.jpg");
+  grad = loadImage("/javascript/larsV.jpg");
   //cnv.parent("a");
   //let x = (windowWidth - width) / 2;
   //let y = (windowHeight - height) / 2;
