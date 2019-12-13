@@ -4,9 +4,9 @@ function setup() {
   let cnv = createCanvas(1000, 800);
   cnv.parent('can');
   grad = loadImage("/javascript/gradient.png");
-  let x = (windowWidth - width) / 2;
-  let y = (windowHeight - height) / 2;
-  cnv.position(x, y);
+  //let x = (windowWidth - width) / 2;
+  //let y = (windowHeight - height) / 2;
+  //cnv.position(x, y);
 
 }
 
