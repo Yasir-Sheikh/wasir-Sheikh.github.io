@@ -29,7 +29,7 @@ function draw() {
   fill(newColor[0], newColor[1], newColor[2]);
   rect(500, 100, 200, 200);
 
-  image(grad, 1000/2, 800/2, 800, 200);
+  image(grad, 200, 800/2, 800, 200);
 
   hPix = get(mouseX, mouseY);
   for (let i = 0; i < 3; i++) {
