@@ -25,7 +25,6 @@ function draw() {
   background(200, 200, 100);
   fill(0, 0, 255);
   strokeWeight(10);
-  ellipse(200, 200, 200);
   fill(newColor[0], newColor[1], newColor[2]);
   rect(500, 100, 200, 200);
 
