@@ -23,12 +23,12 @@ function windowResized() {
 }
 
 function draw() {
-  fill (255, 255, 255);//WHITE
-  rect (11, 11, 111, 111); //WHITE SQUARE
   background(255, 229, 180);
   strokeWeight(10);
   fill(newColor[0], newColor[1], newColor[2]); //COLOR
   rect(4*(windowWidth-17)/5, 50, 200, 300); //OUTPUT RECTANGLE
+   fill (255, 255, 255);//WHITE
+  rect (11, 11, 111, 111); //WHITE SQUARE
   textFont(boldRobert, 25); //FONT LOADING
 
   rect(18,88,windowWidth/2-155,205,5); //background to IMAGE
