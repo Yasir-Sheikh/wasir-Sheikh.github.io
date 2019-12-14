@@ -1,12 +1,13 @@
 let grad;
 
+function preload() {
+  grad = loadImage('/javascript/gradient.png');
+  boldRobert = loadFont('/javascript/Roboto-Bold.ttf');
+}
+
 function setup() {
   let cnv = createCanvas(windowWidth-17, 400);
-  grad = loadImage("gradient.png");
-  boldRobert = loadFont('Roboto-Bold.ttf');
   cnv.parent('can');
-
-
 }
 
 
