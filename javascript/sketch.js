@@ -1,9 +1,14 @@
 let grad;
 
+function preload() {
+  grad = loadImage("gradient.png");
+  boldRobert = loadFont('Roboto-Bold.ttf');
+}
+
 function setup() {
   let cnv = createCanvas(windowWidth-17, 400);
   cnv.parent('can');
-  grad = loadImage("/javascript/gradient.png");
+
 
 }
 
@@ -16,37 +21,52 @@ let newColor = [255, 255, 255];
 
 function windowResized() {
   resizeCanvas(windowWidth-17, 400);
+
 }
 
 function draw() {
   background(255, 229, 180);
-  fill(0, 0, 255);
   strokeWeight(10);
-  fill(newColor[0], newColor[1], newColor[2]);
-  rect(500, 50, 200, 300);
-  textSize(25);
+  fill(newColor[0], newColor[1], newColor[2]); //COLOR
+  rect(4*(windowWidth-17)/5, 50, 200, 300); //OUTPUT RECTANGLE
+  textFont(boldRobert, 25); //FONT LOADING
 
-  image(grad, 100, 400/2, 800, 200);
+  rect(18,88,805,205,5); //background to IMAGE
+  image(grad, 20, 90, 800, 200);
 
   hPix = get(mouseX, mouseY);
+  fill(0);
+  text("Hovering: ", ((windowWidth)/6)-120, 390);
+  text("Selection 1: ", ((windowWidth)/1.8)-120, 150);
+  text("Selection 2: ", ((windowWidth)/1.8)-120, 250);
+  text("Output: ", (4*(windowWidth)/4.7)-120, 390);
   for (let i = 0; i < 3; i++) {
-    fill(0);
-    text(hPix[i], (windowWidth-17) + i * 50, 400);
-    text(pixChoice1[i], 0 + i * 50, 50)
-    text(pixChoice2[i], 0 + i * 50, 80)
-    text(floor(newColor[i]), 0 + i * 50, 110);
+    text(hPix[i], 17 + ((windowWidth)/6) + i * 50, 390); //HOVERING PIXEL RGB
+    text(pixChoice1[i], (windowWidth/1.7) + i * 50, 150) //1rst Choice
+    text(pixChoice2[i], (windowWidth/1.7) + i * 50, 250) //2nd choice
+    text(floor(newColor[i]), (4*(windowWidth-17)/4.7) + i * 50, 390); //Combined COLOR
   }
-  if (clickNum%2 === 0 ) { mix(); }
+
+  if (clickNum%2 === 0 )
+  {
+    strokeWeight(2);
+    fill(255,255,255,100);
+    mix();
+    rect((windowWidth)/2.05, 115, 340, 50);
+  }else{
+    strokeWeight(2);
+    fill(255,255,255,100);
+    rect((windowWidth)/2.05, 220, 340, 50);
+  }
 
 }
 
 function mix() {
 
-
-for (let i = 0; i<3; i++)
-{
-  newColor[i] = (pixChoice1[i] + pixChoice2[i]) / 2;
-}
+  for (let i = 0; i<3; i++)
+  {
+    newColor[i] = (pixChoice1[i] + pixChoice2[i]) / 2;
+  }
 
 }
 
@@ -56,9 +76,6 @@ function mouseClicked() {
     pixChoice1 = get(mouseX, mouseY);
   } else {
     pixChoice2 = get(mouseX, mouseY);
-    //console.log(pixChoice2);
   }
   clickNum++;
-  console.log(clickNum);
-
 }
