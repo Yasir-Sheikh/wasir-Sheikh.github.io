@@ -1,8 +1,8 @@
 let grad;
 
 function preload() {
-  grad = loadImage("gradient.png");
-  boldRobert = loadFont('Roboto-Bold.ttf');
+  grad = loadImage("/javascript/gradient.png");
+  boldRobert = loadFont('/javascript/Roboto-Bold.ttf');
 }
 
 function setup() {
