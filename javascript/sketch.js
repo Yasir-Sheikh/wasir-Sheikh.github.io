@@ -29,19 +29,19 @@ function draw() {
   rect(4*(windowWidth-17)/5, 50, 200, 300); //OUTPUT RECTANGLE
   textFont(boldRobert, 25); //FONT LOADING
 
-  rect(18,88,805,205,5); //background to IMAGE
-  image(grad, 20, 90, 800, 200);
+  rect(18,88,windowWidth/2-155,205,5); //background to IMAGE
+  image(grad, 20, 90, windowWidth/2-160, 200);//IMG BORDER
 
   hPix = get(mouseX, mouseY);
   fill(0);
   text("Hovering: ", ((windowWidth)/6)-120, 390);
-  text("Selection 1: ", ((windowWidth)/1.8)-120, 150);
-  text("Selection 2: ", ((windowWidth)/1.8)-120, 250);
+  text("Selection 1: ", windowWidth/2, 150);
+  text("Selection 2: ", windowWidth/2, 250);
   text("Output: ", (4*(windowWidth)/4.7)-120, 390);
   for (let i = 0; i < 3; i++) {
     text(hPix[i], 17 + ((windowWidth)/6) + i * 50, 390); //HOVERING PIXEL RGB
-    text(pixChoice1[i], (windowWidth/1.7) + i * 50, 150) //1rst Choice
-    text(pixChoice2[i], (windowWidth/1.7) + i * 50, 250) //2nd choice
+    text(pixChoice1[i], (windowWidth/2)+160 + i * 50, 150) //1rst Choice
+    text(pixChoice2[i], (windowWidth/2)+160 + i * 50, 250) //2nd choice
     text(floor(newColor[i]), (4*(windowWidth-17)/4.7) + i * 50, 390); //Combined COLOR
   }
 
@@ -50,11 +50,11 @@ function draw() {
     strokeWeight(2);
     fill(255,255,255,100);
     mix();
-    rect((windowWidth)/2.05, 115, 340, 50);
+    rect((windowWidth)/2-10, 115, 340, 50);
   }else{
     strokeWeight(2);
     fill(255,255,255,100);
-    rect((windowWidth)/2.05, 220, 340, 50);
+    rect((windowWidth)/2-10, 220, 340, 50);
   }
 
 }
