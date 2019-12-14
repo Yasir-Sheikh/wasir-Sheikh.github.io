@@ -28,7 +28,7 @@ function draw() {
   fill(newColor[0], newColor[1], newColor[2]); //COLOR
   rect(4*(windowWidth-17)/5, 50, 200, 300); //OUTPUT RECTANGLE
   fill (255, 255, 255);
-  rect (11, 11, 11, 11); //BLANK SQUARE
+  rect (111, 111, 111, 111); //BLANK SQUARE
   textFont(boldRobert, 25); //FONT LOADING
 
   rect(18,88,windowWidth/2-155,205,5); //background to IMAGE
