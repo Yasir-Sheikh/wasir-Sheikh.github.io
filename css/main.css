@@ -43,11 +43,16 @@ canvas{
 }
 
 #Para3{
+    
+    font-family:Quicksand;
+    font-size:100px;
     margin-top:100px;
 }
 
 #Para2{
-   margin-top:100px;
+    font-family:Quicksand;
+    font-size:100px;
+    margin-top:100px;
 }
 
 #Title{
