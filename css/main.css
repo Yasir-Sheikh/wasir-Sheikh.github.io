@@ -29,6 +29,7 @@ canvas{
     margin-left:100px;
     max-width: 100%;
     max-height: 100vh;
+    float:right;
 }
 #pic2{
     margin-top:100px;
@@ -37,10 +38,11 @@ canvas{
     max-height: 100vh;
     display:block;
     float:left;
+    
 }
 
 #Para3{
-    float:right;
+    
 }
 
 #Para2{
