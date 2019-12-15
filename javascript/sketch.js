@@ -27,8 +27,6 @@ function draw() {
   strokeWeight(10);
   fill(newColor[0], newColor[1], newColor[2]); //COLOR
   rect(4*(windowWidth-17)/5, 50, 200, 300); //OUTPUT RECTANGLE
-  fill (255, 255, 255);//WHITE
-  rect (10, 10, 50, 50); //WHITE SQUARE
   textFont(boldRobert, 25); //FONT LOADING
 
   rect(18,88,windowWidth/2-155,205,5); //background to IMAGE
