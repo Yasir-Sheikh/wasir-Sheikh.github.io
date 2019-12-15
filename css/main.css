@@ -48,7 +48,6 @@ canvas{
     font-family:Quicksand;
     font-size:50px;
     margin-top:410px;
-    margin-left:100px;
 }
 
 #Para2{
@@ -56,6 +55,7 @@ canvas{
     font-family:Quicksand;
     font-size:50px;
     margin-top:850px;
+    margin-left:100px;
 }
 
 #Title{
