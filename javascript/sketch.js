@@ -23,7 +23,7 @@ function windowResized() {
 }
 
 function draw() {
-  background(255, 229, 180);
+  background(249, 129, 113);
   strokeWeight(10);
   fill(newColor[0], newColor[1], newColor[2]); //COLOR
   rect(4*(windowWidth-17)/5, 50, 200, 300); //OUTPUT RECTANGLE
