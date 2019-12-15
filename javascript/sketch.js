@@ -2,7 +2,7 @@ let grad;
 
 function preload() {
   grad = loadImage("/javascript/gradient.png");
-  boldRobert = loadFont('/javascript/Roboto-Bold.ttf');
+  boldRobert = loadFont('/javascript/Quicksand-Medium.ttf');
 }
 
 function setup() {
