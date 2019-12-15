@@ -24,7 +24,7 @@ canvas{
 .Main-img{
    max-width: 100%;
 }
-#pic3{
+#pic2{
     margin-top:100px;
     margin-left:100px;
     margin-right:100px;
@@ -32,7 +32,7 @@ canvas{
     max-height: 100vh;
     float:left;
 }
-#pic2{
+#pic3{
     margin-top:1000px;
     margin-right:100px;
     margin-left:100px;
@@ -43,14 +43,14 @@ canvas{
     
 }
 
-#Para3{
+#Para2{
     
     font-family:Quicksand;
     font-size:50px;
     margin-top:510px;
 }
 
-#Para2{
+#Para3{
     font-family:Quicksand;
     font-size:50px;
     margin-top:1050px;
