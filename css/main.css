@@ -36,6 +36,7 @@ canvas{
     max-width: 100%;
     max-height: 100vh;
     display:block;
+    float:left;
 }
 
 #Para3{
@@ -43,7 +44,7 @@ canvas{
 }
 
 #Para2{
-    float:left;
+   
 }
 
 #Title{
