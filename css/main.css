@@ -38,6 +38,14 @@ canvas{
     display:block;
 }
 
+#Para3{
+    float:right;
+}
+
+#Para2{
+    float:left;
+}
+
 #Title{
   font-size: 100px;
   text-align: center;
