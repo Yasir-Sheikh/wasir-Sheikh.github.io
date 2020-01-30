@@ -1,3 +1,1 @@
-# RGBmix
-App to mix two colors on screen
-
+# Jasir-Sheikh.github.io
